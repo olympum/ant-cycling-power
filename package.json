@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/olympum/ant-cycling-power#readme",
   "dependencies": {
-    "ant-plus": "0.0.9"
+    "ant-plus": "olympum/ant-plus"
   }
 }
