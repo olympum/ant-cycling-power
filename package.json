@@ -1,0 +1,28 @@
+{
+  "name": "ant-cycling-power",
+  "version": "0.1.0",
+  "description": "An ANT+ cycling power meter",
+  "main": "power-meter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/olympum/ant-cycling-power.git"
+  },
+  "keywords": [
+    "ANT+",
+    "power",
+    "meter",
+    "cycling"
+  ],
+  "author": "Bruno Fernandez-Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olympum/ant-cycling-power/issues"
+  },
+  "homepage": "https://github.com/olympum/ant-cycling-power#readme",
+  "dependencies": {
+    "ant-plus": "0.0.9"
+  }
+}
