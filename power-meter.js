@@ -29,7 +29,7 @@ var PowerMeter = function() {
     console.log('cycling power meter initialized');
   });
 
-  stick.on('shutdown', function () { console.log('shutdown'); });
+  stick.on('shutdown', function () { console.log('ANT+ shutdown'); });
 
   if (!stick.open()) {
   	console.log('ANT+ USB stick not found!');
@@ -39,9 +39,14 @@ var PowerMeter = function() {
   this.channel = channel;
   this.power_event_count = 0;
   this.power_accumulated = 0;
+
 };
 
 PowerMeter.prototype.broadcast = function(power, cadence) {
+  if (!this.stick.is_present()) {
+    return;
+  }
+
   var data = [];
   data.push(this.channel);
   data.push(0x10); // power only
